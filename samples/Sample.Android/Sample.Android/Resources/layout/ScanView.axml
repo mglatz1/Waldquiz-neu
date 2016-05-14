@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+    <TextView
+        android:text="Willkommen zurück"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewWelcomeback" />
+    <Button
+        android:text="Scannen"
+        android:id="@+id/buttonScanDefaultView"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <TextView
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewInfo"
+        android:textColor="@android:color/holo_green_dark" />
+</LinearLayout>

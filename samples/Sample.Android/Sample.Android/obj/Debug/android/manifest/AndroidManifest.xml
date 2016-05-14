@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto" package="com.altusapps.zxingnetmobile">
+  <uses-sdk android:targetSdkVersion="23" android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <application android:icon="@drawable/launcher" android:label="ZXing.Net.Mobile" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:configChanges="keyboardHidden|orientation" android:label="Waldquiz" android:theme="@android:style/Theme.Holo.Light" android:name="md51a3805cb73efe60e7dfeedbc6f47418c.Activity1">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="keyboardHidden|orientation" android:label="ZXing.Net.Mobile" android:theme="@android:style/Theme.Holo.Light" android:name="md51a3805cb73efe60e7dfeedbc6f47418c.FragmentActivity" />
+    <activity android:label="ImageActivity" android:name="md51a3805cb73efe60e7dfeedbc6f47418c.ImageActivity" />
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md5ebfcfb315379575a1b34662c6abbe082.ZxingActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.altusapps.zxingnetmobile.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.altusapps.zxingnetmobile" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
